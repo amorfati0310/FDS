@@ -16,7 +16,7 @@
     <!-- input field -->
     <div class="form-area">
       <label for="add-todo__item">Register Todo Item:</label>
-      <input v-model="new_item" @keyup.enter="addTodoItem" id="add-todo__item" type="text">
+      <input v-model="new_item" @keyup.a="addTodoItem" id="add-todo__item" type="text">
       <button type="button" @click="addTodoItem">Add</button>
     </div>
     <hr>
@@ -40,7 +40,8 @@
   // Vue 환경 설정
   ///////////////
   Vue.config.keyCodes = {
-    g: 71,
+    // g: 71,
+    a: 71,
     command: 91
   };
 
